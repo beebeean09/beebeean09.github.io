@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="The best Chicken Fried Rice! Time duration only 15 minutes!" >
+  <meta name="description" content="The best Chicken Fried Rice! Cook time only 15 minutes!" >
   <link rel="stylesheet" href="../../assets/css_reset.css" type="text/css"/>
   <script src="../../assets/external_javascript_example.js" type="text/javascript"></script>
   <script>
@@ -29,9 +29,18 @@
     text-align: inherit;
   }
 
+  header {
+    color: black;
+  }
+
   body {
     padding: 20px;
     color: gray;
+  }
+
+  .resize2 {
+    width: 200px;
+    height: 70px;
   }
 
   .resize {
@@ -41,16 +50,11 @@
   </style>
 
 
-
-
-
-
-
 </head>
 <body>
 
 <header>
-  <img src="https://trademarks.justia.com/media/image.php?serial=86444706" alt="App Academy Logo">
+  <img class="resize2" src="https://trademarks.justia.com/media/image.php?serial=86444706" style="width:200px; height:70px;" alt="App Academy Logo">
 
 <h2>Easy Recipe!<h2>
   <h1>Chicken Fried Rice</h1>
@@ -79,19 +83,19 @@
       <ul>
   <aside>
 
-<section>
-  <h1>Chicken Fried Rice Recipe<h1>
+  <section>
+    <h1>Chicken Fried Rice Recipe<h1>
 
-  <figure>
-    <img class="resize" src="http://life-in-the-lofthouse.com/wp-content/uploads/2015/07/Chicken_Fried_Rice4.jpg" alt="Chicken Fried Rice">
-    <figcaption>
-      <a href="https://en.wikipedia.org/wiki/Fried_rice">The history of Fried Rice</a>
-    <figcaption>
-  </figure>
+    <figure>
+      <img class="resize" src="http://life-in-the-lofthouse.com/wp-content/uploads/2015/07/Chicken_Fried_Rice4.jpg" alt="Chicken Fried Rice">
+      <figcaption>
+        <a href="https://www.hungryforever.com/7-fried-rice-recipes-from-around-the-world/">Click here to check out other fried rice dishes from around the world!<br></a>
+      <figcaption>
+    </figure>
 
 
 
-    <h2 id="directions">Directions</h2
+    <h2 id="directions">Directions</h2>
     <<ol>
       <li>
         Cook chicken covered in teriyaki sauce in a crock-pot on high heat for 3 hours. OR in oven at 375 F° for 35 minutes.
@@ -116,12 +120,16 @@
       <label for="name">Name</label>
       <input id= "name" type="text" name="name">
 
+      <br>
+
       <label for="rating">Rating</label>
         1 <input type="radio" name="rating" value="1" selected = "checked">
         2 <input type="radio" name="rating" value="2">
         3 <input type="radio" name="rating" value="3">
         4 <input type="radio" name="rating" value="4">
         5 <input type="radio" name="rating" value="5">
+
+      <br>
 
       <label for="expertise">Cooking Expertise</label>
 
@@ -132,6 +140,8 @@
         <option value="Cooking is a Hobby">Cooking is a Hobby</option>
         <option value="Professional Chef">Professional Chef</option>
       </select>
+
+      <br>
 
       <label>Review
         <textarea name="review" rows="8" cols="80"></textarea>
