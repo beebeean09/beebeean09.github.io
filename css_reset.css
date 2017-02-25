@@ -1,0 +1,79 @@
+  html, section, aside, h1, h2 {
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    color: #545454;
+  }
+
+  body {
+    font-family: arial;
+    background-color: #ffc0bb;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  ul li a, section figure figcaption a, footer p a {
+    text-decoration: none;
+  }
+
+  .ingredients-list {
+    list-style: square;
+  }
+
+  ol {
+    list-style: upper-roman inside;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  header > img {
+  width: 100px;
+  }
+
+  .resize {
+    width: 500px;
+    height: auto;
+  }
+
+  .user_review h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(stars.png);
+    vertical-align: bottom;
+  }
+
+  input[type="radio"]:checked {
+    background-position: 30px 30px;
+  }
+
+
+  input:last-child {
+    background: gold;
+  }
+
+  input:last-child:hover {
+    -webkit-filter: brightness(90%);
+  }
+
+  ol li:nth-of-type(2n) {
+    background-color: beige;
+  }
+
+  h2 + .user_review {
+    border-top: 1px solid black;
+  }
