@@ -1,19 +1,68 @@
-  html, section, aside, h1, h2 {
 
-    margin: 0;
-    border: 0;
-    padding: 0;
-
-    color: #545454;
-  }
 
   body {
     font-family: arial;
     background-color: #ffc0bb;
-    margin: 0;
-    border: 0;
-    padding: 0;
+    color: #545454;
   }
+
+  body {
+    margin: 0 auto;
+    width: 900px;
+  }
+
+  section {
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  select {
+    margin: 10px 0;
+    width: 180px;
+  }
+
+  aside {
+    width: 180px;
+    margin-right: 15px;;
+    display: inline-block;
+  }
+
+  textarea {
+    width: 350px;
+  }
+
+  label {
+    display: block;
+  }
+
+  input[type="text"], select {
+    display: block;
+    width: 175px;
+  }
+
+  figure {
+    margin:0;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 20px;
+    display: block;
+  }
+
+  /*.col {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }*/
 
   ul li a, section figure figcaption a, footer p a {
     text-decoration: none;
@@ -29,6 +78,7 @@
 
   h1 {
     font-size: 38px;
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -36,8 +86,18 @@
   }
 
   header > img {
-  width: 100px;
+    width: 100px;
   }
+
+  select {
+    margin: 10px 0px;
+    width: 180px;
+  }
+
+  .ingredients-list li {
+    margin: 15px 0px;
+  }
+
 
   .resize {
     width: 500px;
@@ -77,3 +137,9 @@
   h2 + .user_review {
     border-top: 1px solid black;
   }
+
+  /*.group:after {
+    content:"";
+    clear:both;
+    display:block;
+  }*/

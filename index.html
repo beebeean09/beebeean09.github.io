@@ -18,11 +18,9 @@
 </head>
 
 <body>
-
-  <header>
+  <header class="group">
     <img class="resize2" src="https://p5.zdassets.com/hc/settings_assets/949671/200252358/ytySguzPxy92CMwTwD4fxg-logo-emblem-red.png" style="width:200px; height:200px;" alt="App Academy Logo">
 
-    <h1>Chicken Fried Rice</h1>
     <nav>
       <ul>
           <li><a href="#description">Description</a></li>
@@ -30,7 +28,7 @@
           <li><a href="#directions">Directions</a></li>
       </ul>
     </nav>
-  <header>
+  </header>
 
   <aside>
     <h2>Servings: 6</h2></br>
@@ -41,7 +39,7 @@
 
     <h2 id="ingredients">Ingredients</h2>
 
-    <ul>
+    <ul class="ingredients-list">
       <li>3 boneless, skinless chicken breasts</li>
       <li>1 (18 oz) bottle Teriyaki sauce</li>
       <li>3 Tablespoons sesame oil (or vegetable oil)</li>
@@ -53,10 +51,12 @@
       <li>3-4 Tablespoons soy sauce</li>
       <li>Drizzle of sesame oil (Optional)</li>
     <ul>
+  </aside>
 
-  <aside>
+
 
   <section>
+    <h1>Chicken Fried Rice</h1>
     <figure>
       <img class="resize" src="http://life-in-the-lofthouse.com/wp-content/uploads/2015/07/Chicken_Fried_Rice4.jpg" alt="Chicken Fried Rice">
       <figcaption>
@@ -85,44 +85,45 @@
         Drizzle sesame oil at the end if desired. Serve and enjoy!
       </li>
     <ol>
+
+    <section id="reviews"><br>
+      <h2>Reviews</h2><br>
+      <form id="review-form" action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id= "name" type="text" name="name">
+
+        <br></br>
+
+        <label for="rating">Rating</label>
+          1 <input type="radio" name="rating" value="1" checked>
+          2 <input type="radio" name="rating" value="2">
+          3 <input type="radio" name="rating" value="3">
+          4 <input type="radio" name="rating" value="4">
+          5 <input type="radio" name="rating" value="5">
+
+        <br></br>
+
+        <label for="expertise">Cooking Expertise</label>
+
+        <select id="expertise" name="expertise">
+          <option value="Select Cooking Expertise", selected = true, disabled = true, >Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+
+        <br></br>
+
+        <label>Review
+          <br><textarea id="review" name="review" rows="8" cols="80"></textarea>
+        </label>
+
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
   </section>
 
-  <section id="reviews"><br>
-    <h2>Reviews</h2><br>
-    <form id="review-form" action="/reviews" method="post">
-      <label for="name">Name</label>
-      <input id= "name" type="text" name="name">
-
-      <br></br>
-
-      <label for="rating">Rating</label>
-        1 <input type="radio" name="rating" value="1" checked>
-        2 <input type="radio" name="rating" value="2">
-        3 <input type="radio" name="rating" value="3">
-        4 <input type="radio" name="rating" value="4">
-        5 <input type="radio" name="rating" value="5">
-
-      <br></br>
-
-      <label for="expertise">Cooking Expertise</label>
-
-      <select id="expertise" name="expertise">
-        <option value="Select Cooking Expertise", selected = true, disabled = true, >Select Cooking Expertise</option>
-        <option value="Sometimes Cook">Sometimes Cook</option>
-        <option value="Cook Everyday">Cook Everyday</option>
-        <option value="Cooking is a Hobby">Cooking is a Hobby</option>
-        <option value="Professional Chef">Professional Chef</option>
-      </select>
-
-      <br></br>
-
-      <label>Review
-        <br><textarea id="review" name="review" rows="8" cols="80"></textarea>
-      </label>
-
-      <input type="submit" value="Submit Review">
-    </form>
-  </section>
 
 
   <footer>
