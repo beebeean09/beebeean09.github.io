@@ -8,13 +8,14 @@
 
   body {
     margin: 0 auto;
-    width: 900px;
+    width: 60%;
   }
 
   section {
     width: 700px;
     display: inline-block;
     vertical-align: top;
+    margin-left: 15px;
   }
 
   select {
@@ -43,10 +44,12 @@
 
   figure {
     margin:0;
+    display: inline-block;
   }
 
   nav {
     display: inline-block;
+    float: right;
   }
 
   nav ul li {
@@ -58,14 +61,12 @@
     display: block;
   }
 
-  /*.col {
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-  }*/
-
   ul li a, section figure figcaption a, footer p a {
     text-decoration: none;
+  }
+
+  figure figcaption {
+    text-align: center;
   }
 
   .ingredients-list {
@@ -78,6 +79,7 @@
 
   h1 {
     font-size: 38px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -137,6 +139,54 @@
   h2 + .user_review {
     border-top: 1px solid black;
   }
+
+  .hamburger-dropdown {
+    display: none;
+  }
+
+  @media all and (max-width: 900px) {
+    nav ul {
+      display: none;
+    }
+
+    .hamburger-dropdown {
+      display: block;
+    }
+
+    .hamburger-dropdown > li {
+      background: url("./hamburger.png");
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+      width: 80px;
+      height: 80px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hamburger-dropdown ul {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      flex-direction: column;
+      box-shadow: gray 5px 5px;
+      cursor: pointer;
+    }
+
+    .hamburger-dropdown:hover ul {
+      display: flex;
+      background: ghostwhite;
+    }
+
+    .hamburger-dropdown ul li:hover a {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .hamburger-dropdown li ul li a {
+      border-bottom: black solid 1px;
+    }
+  }
+
 
   /*.group:after {
     content:"";
