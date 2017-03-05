@@ -61,6 +61,7 @@
     padding: 20px;
     display: block;
     color: inherit;
+    font-size: 20px;
   }
 
   ul li a, section figure figcaption a, footer p a {
